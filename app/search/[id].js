@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import {
   ActivityIndicator,
   FlatList,
@@ -32,8 +33,7 @@ const JobSearch = () => {
         method: "GET",
         url: `https://jsearch.p.rapidapi.com/search`,
         headers: {
-          "X-RapidAPI-Key":
-            "35f1c10e73msh9f31afea21b5c26p1aa11ejsn367569c6c6e9",
+          "X-RapidAPI-Key": process.env.RAPID_API_KEY,
           "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
         },
         params: {
