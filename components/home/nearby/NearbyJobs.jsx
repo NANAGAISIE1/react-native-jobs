@@ -13,12 +13,18 @@ const NearbyJobs = () => {
     num_pages: "1",
   });
 
+  const handleShowAll = () => {
+    router.push(`/nearby-jobs/`);
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Nearby jobs</Text>
         <TouchableOpacity>
-          <Text style={styles.headerBtn}>Show all</Text>
+          <Text style={styles.headerBtn} onPress={handleShowAll}>
+            Show all
+          </Text>
         </TouchableOpacity>
       </View>
 
