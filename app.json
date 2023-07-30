@@ -4,6 +4,7 @@
     "web": {
       "bundler": "metro"
     },
+    "owner": "nanagaisie",
     "name": "Job Finder",
     "slug": "react-native-jobs",
     "extra": {
@@ -13,6 +14,9 @@
     },
     "android": {
       "package": "com.nanagaisie.reactnativejobs"
+    },
+    "ios": {
+      "bundleIdentifier": "com.nanagaisie.reactnativejobs"
     }
   }
 }
