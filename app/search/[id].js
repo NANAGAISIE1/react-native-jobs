@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Constants from "expo-constants";
+
+const RAPID_API_KEY = Constants.manifest.extra.apiKey;
 
 import {
   ActivityIndicator,
@@ -33,7 +36,7 @@ const JobSearch = () => {
         method: "GET",
         url: `https://jsearch.p.rapidapi.com/search`,
         headers: {
-          "X-RapidAPI-Key": process.env.RAPID_API_KEY,
+          "X-RapidAPI-Key": RAPID_API_KEY,
           "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
         },
         params: {
